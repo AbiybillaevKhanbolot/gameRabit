@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #332e2e;
+    font-family: "Open Sans", sans-serif;
+}
+
+.webgl {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    display: block;
+    background-color: #332e2e;
+
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.webgl:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+#instructions {
+    position: fixed;
+    width: 100%;
+    bottom: 60px;
+    left: 0;
+
+    color: #ff3434;
+    font-size: 11px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+    pointer-events: none;
+    z-index: 10;
+}
+
+#credits {
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+
+    color: #7beeff;
+    font-size: 10px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+
+    pointer-events: none;
+    z-index: 10;
+}
+
+@media (max-width: 600px) {
+    #instructions {
+        bottom: 55px;
+        font-size: 10px;
+    }
+
+    #credits {
+        bottom: 18px;
+        font-size: 9px;
+    }
+}
